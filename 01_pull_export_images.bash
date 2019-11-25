@@ -36,6 +36,9 @@ do
   docker pull $IMG_NAME
 done
 
+# include a copy of the docker registry image in the export..
+docker pull registry:2.7.1
+
 
 # Move images by exporting / importing to near registry server location
 # note: this is around 5.2GB file
